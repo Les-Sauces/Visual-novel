@@ -1,0 +1,19 @@
+$ amour_g = 1
+$ amour_r = 1
+$ amour_j = 1
+$ amour_t = 1
+$ amour_a = 1
+
+define g = Character("Gabriel Aumasson-Leduc", color="45C5E6")
+define r = Character("Robin", color="#BE3BFA")
+define j = Character("Jules", color="#E36B2B")
+define t = Character("Thomas", color="#FDF70F")
+define a = Character("Adrian", color="#91FD3F")
+
+label start:
+    r "bite"
+    menu:
+        "oui":
+            $ amour_r += 100
+        "non":
+            $ amour_r -= 100
